@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Short Stack', cursive;
+font-weight: 400;
+font-size: 16px;
+line-height: 1;
+color: rgb(1, 84, 140);
+padding: 30px;
+background-color: rgb(134,147,151);
+
+}
+
+
+
+
+.container {
+    height: 95vh;  /* The element is always 95% of the view port height. */
+    background-image: linear-gradient(to right bottom, rgba(21, 67, 153, 0.8),rgb(0,34,68, 0.8)), url(../images/wp2329795-dallas-skyline-wallpapers.jpg);
+    background-size: cover; /* Whatever the size of the view port, it will always try to fit the background into it */;
+    background-position: top;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-width: 25px;
+    border-style: solid;
+    border-color: white;
+    
+
+}
+
+.b-h1-header {
+    color: white;
+    font-size: 50px;
+    padding: 40px;
+    font-family: 'Bungee Inline', cursive;
+}
+
+
+.text-box {
+    margin: 50px;
+
+}
+
+
+.js-choice {
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    background: rgba(0, 0, 0, 0);
+    }
+    
+    
+    .js-choice:hover, #js-startGame:hover {
+        border: 2px solid white;
+    }
+
+
+    
+#js-startGame {
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+}    
