@@ -7,7 +7,7 @@ Thank you for visiting my repository. This project is a short quiz on little kno
 
 Here’s how to play the game:
 
-    	The game has 5 questions about Dallas, Texas.
+    	The game has 4 questions about Dallas, Texas.
     	You will have 30 seconds to answer the question.  The seconds are displayed on a timer that decrements each second.
     	The objective is to select the correct answer before the timer expires.
     	Three events can happen:

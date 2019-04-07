@@ -31,19 +31,20 @@ var answerSelected;
 setArray = function () {
 
     questionArray = [
-        "Which is inside the John F Kennedy Memorial?", 
+        "Which Dallasite invented the frozen margarita?", 
         "What was the original name of the \"Hoop-It-Up\" event promoted by D Magazine?", 
         "What is oil baron Lamar Hunt credited for naming?", 
         "What was the original name of the Dallas Cowboys?"
     ]
 
     choiceArray = [
-        ["A statute of JFK",
-        "A statute of Jackie-O",
-        "A granite block with JFK's name inscribed",
-        "A granite block with Jackie-O's name inscribed",
-        "A granite block with JFK's name inscribed",
-        "Kennedy family friend, Philip Johnson, designed the memorial as a place of quite thought and contemplation. Inside it sits a large granite square inscribed with Kennedy's name. Whether you love it or hate it...Jackie-O approved it."
+        ["Mary Kay",
+        "Tom Landry",
+        "Charley Pride",
+        "Mariano Martinez",
+        "Mariano Martinez",
+        "Mariano was looking for a better way to mix margaritas at his restaurant when he noticed the Slurpee machine at a local 7-Eleven. The result became a national phenomenon and the original machine is now housed at the Smithsonian.  7-Eleven should be proud! ",
+        "https://media.giphy.com/media/r0gGmmjIL5uTK/giphy.gif"
         ],
     
         ["Woop-Dee-Do",
@@ -51,7 +52,8 @@ setArray = function () {
         "Slamma-Jamma",
         "Dunk-It",
         "Hoop-D-Do",
-        "In 1986 D Magazine Publisher, Terry Murphy, founded the tournament which he heavily promoted nation-wide and globally. Now it's the largest participatory basketball event in the world. Not only that, in 2020, the event will become an Olympic sport! Way to go Terry!"
+        "In 1986 D Magazine Publisher, Terry Murphy, founded the tournament which he heavily promoted nation-wide and globally. Now it's the largest participatory basketball event in the world. Not only that, in 2020, the event will become an Olympic sport! Way to go Terry!",
+        "https://media.giphy.com/media/wkA1l1lExztwk/giphy.gif"
         ],
     
         ["Super Bowl",
@@ -59,7 +61,8 @@ setArray = function () {
         "Reunion Arena",
         "Fair Park",
         "Super Bowl",
-        "Lamar wrote to the NFL commissioner that he kiddlingly called the AFL-NFL mash-up the \"Super Bowl\" after seeing his children playing with a Super Ball toy. The name stuck and the rest is history."
+        "Lamar wrote to the NFL commissioner that he kiddlingly called the AFL-NFL mash-up the \"Super Bowl\" after seeing his children playing with a Super Ball toy. The name stuck and the rest is history.",
+        "https://media.giphy.com/media/kiX1wcbKvP4lz6hqVk/giphy.gif"
         ],
     
         ["The Dallas Bluebonnets",
@@ -67,7 +70,8 @@ setArray = function () {
         "The Dallas Buckeroos",
         "The Dallas Longhorns",
         "The Dallas Steers",
-        "The team was formed in 1960 with the name The Dallas Steers. This was quickly changed when the team's general manager decided he didn't want a castrated steer as a mascot. Lucky steer!"
+        "The team was formed in 1960 with the name The Dallas Steers. Before a game was played, the name was changed when the team's general manager decided he didn't want a castrated steer as a mascot. Lucky steer!",
+        "https://media.giphy.com/media/3o7TKu7QO6LpUzxYli/giphy.gif"
         ]    
     ]
 
@@ -185,6 +189,7 @@ answer = function() {
             $( "#js-screen" ).html( "<p>Congratulations, "+choiceArray[index][4]+" is corect!</p><br>" );
             $( "#js-screen" ).append( "<p>Facts to Know:<p><br>" );
             $( "#js-screen" ).append( "<p>"+choiceArray[index][5]+"</button><br><br>" );
+            $( "#js-screen" ).append( "<img src="+choiceArray[index][6]+" width=\'275\' height=\'200\'><br><br>" );
             correctAnswer = "Yes";
         }
     
@@ -193,6 +198,7 @@ answer = function() {
             $( "#js-screen" ).append( "<p>The correct answer is: "+choiceArray[index][4]+"</p><br>" );
             $( "#js-screen" ).append( "<p>Facts to Know:<p><br>" );
             $( "#js-screen" ).append( "<p>"+choiceArray[index][5]+"</button><br><br>" );
+            $( "#js-screen" ).append( "<img src="+choiceArray[index][6]+" width=\'275\' height=\'200\'><br><br>" );
             correctAnswer = "No";
             }
     }
@@ -233,6 +239,7 @@ noAnswer = function() {
         $( "#js-screen" ).append( "<p>Here\'s the correct answer:</p><br>" );
         $( "#js-screen" ).append( "<p>"+choiceArray[index][4]+"</button><br><br>" );
         $( "#js-screen" ).append( "<p>"+choiceArray[index][5]+"</button><br>" );
+        $( "#js-screen" ).append( "<img src="+choiceArray[index][6]+" width=\'275\' height=\'200\'><br><br>" );
     }
 
     // Increment index
