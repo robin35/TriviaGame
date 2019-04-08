@@ -188,7 +188,7 @@ answer = function() {
         if ( answerSelected === choiceArray[index][4] ) {
             $( "#js-screen" ).html( "<p>Congratulations, "+choiceArray[index][4]+" is corect!</p><br>" );
             $( "#js-screen" ).append( "<p>Facts to Know:<p><br>" );
-            $( "#js-screen" ).append( "<p>"+choiceArray[index][5]+"</button><br><br>" );
+            $( "#js-screen" ).append( "<p>"+choiceArray[index][5]+"</p><br><br>" );
             $( "#js-screen" ).append( "<img src="+choiceArray[index][6]+" width=\'275\' height=\'200\'><br><br>" );
             correctAnswer = "Yes";
         }
@@ -197,7 +197,7 @@ answer = function() {
             $( "#js-screen" ).html( "<p>Nope, that's not it.</p><br>" );
             $( "#js-screen" ).append( "<p>The correct answer is: "+choiceArray[index][4]+"</p><br>" );
             $( "#js-screen" ).append( "<p>Facts to Know:<p><br>" );
-            $( "#js-screen" ).append( "<p>"+choiceArray[index][5]+"</button><br><br>" );
+            $( "#js-screen" ).append( "<p>"+choiceArray[index][5]+"</p><br><br>" );
             $( "#js-screen" ).append( "<img src="+choiceArray[index][6]+" width=\'275\' height=\'200\'><br><br>" );
             correctAnswer = "No";
             }
@@ -237,8 +237,8 @@ noAnswer = function() {
     if ( timeExpired === true ) {
         $( "#js-screen" ).html( "<p>Time\'s Up! The clock beat you!</p><br>" );
         $( "#js-screen" ).append( "<p>Here\'s the correct answer:</p><br>" );
-        $( "#js-screen" ).append( "<p>"+choiceArray[index][4]+"</button><br><br>" );
-        $( "#js-screen" ).append( "<p>"+choiceArray[index][5]+"</button><br>" );
+        $( "#js-screen" ).append( "<p>"+choiceArray[index][4]+"</p><br><br>" );
+        $( "#js-screen" ).append( "<p>"+choiceArray[index][5]+"</p><br>" );
         $( "#js-screen" ).append( "<img src="+choiceArray[index][6]+" width=\'275\' height=\'200\'><br><br>" );
     }
 
