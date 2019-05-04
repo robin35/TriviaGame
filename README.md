@@ -2,6 +2,7 @@
 README
 
 YOU DON’T KNOW “THIS”??? DALLAS EDITION
+Link: https://robin35.github.io/TriviaGame/
 
 Thank you for visiting my repository. This project is a short quiz on little known facts about Dallas, Texas. 
 
